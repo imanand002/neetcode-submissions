@@ -1,0 +1,21 @@
+class Pet:
+    def __init__(self, name: str):
+        self.name = name
+        self.hunger = 5
+
+    def feed(self):
+        self.hunger -= 1
+        print('Fluffy has been fed.')
+        # TODO: Implement this method
+        # It should decrease the pet's hunger by 1
+        # and print a message about feeding the pet
+
+# Create a pet
+my_pet = Pet("Fluffy")
+my_pet.feed()
+print(f"Fluffy's hunger level: {my_pet.hunger}")
+my_pet.feed()
+print(f"Fluffy's hunger level: {my_pet.hunger}")
+my_pet.feed()
+print(f"Fluffy's hunger level: {my_pet.hunger}")
+# TODO: Feed the pet three times
